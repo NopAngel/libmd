@@ -1,0 +1,15 @@
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99
+TARGET = test_libmd
+SOURCES = test1.c ../src/md.c
+
+all: $(TARGET)
+
+$(TARGET): $(SOURCES)
+	$(CC) $(CFLAGS) -o $@ $(SOURCES)
+
+clean:
+	rm -f $(TARGET) *.o
+
+run: $(TARGET)
+	./$(TARGET)

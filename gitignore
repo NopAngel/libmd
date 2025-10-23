@@ -1,0 +1,6 @@
+*.so
+*.o
+
+./*/math_app
+./*/mi_programa
+./*/test_libmd
